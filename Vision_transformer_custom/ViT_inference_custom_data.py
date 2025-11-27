@@ -14,10 +14,10 @@ import time
 import os
 
 # 1. 저장된 모델 경로 설정 (📌 학습 후 저장된 폴더 이름과 일치해야 합니다)
-MODEL_PATH = "./Vision_transformer_custom"
+MODEL_PATH = "./final_custom_vit_model"
 
 # 2. 추론할 이미지 파일 경로 설정 (📌 실제 이미지 파일로 변경하세요)
-IMAGE_FILE_PATH = "./Vision_transformer_custom/cans.jpg"
+IMAGE_FILE_PATH = "./cans.jpg"
 
 # -----------------------------------------------------
 # 모델 및 프로세서 로드

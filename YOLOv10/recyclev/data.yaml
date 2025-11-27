@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['can', 'cup', 'pet']
+
+roboflow:
+  workspace: jd-edu
+  project: recyclev2-uxg6p
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/jd-edu/recyclev2-uxg6p/dataset/1

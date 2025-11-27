@@ -4,7 +4,7 @@ import os
 # --- 설정 (Configuration) ---
 # 1. 학습 완료된 Custom 모델 가중치 파일 경로
 # 'best.pt'는 2단계에서 학습 완료 후 저장된 파일입니다.
-custom_model_path = './runs/detect/yolov10_can_cup_pet_train/weights/best.pt'
+custom_model_path = './runs/detect/yolov10_can_cup_pet_train4/weights/best.pt'
 # for debugging 
 #custom_model_path = './weights/yolov10n.pt'
 # 2. 테스트할 이미지 파일 경로

@@ -9,7 +9,7 @@ import time
 # =======================================================
 # 1. 모델 설정 및 로드
 # =======================================================
-MODEL_PATH = "./Vision_transformer_custom"  # 📌 학습 후 모델이 저장된 폴더 경로
+MODEL_PATH = "./final_custom_vit_model"  # 📌 학습 후 모델이 저장된 폴더 경로
 
 try:
     if not os.path.isdir(MODEL_PATH):
