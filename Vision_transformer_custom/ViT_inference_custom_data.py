@@ -72,11 +72,11 @@ try:
     end_time = time.time()
 
     print("\n--- 추론 결과 ---")
-    print(f"⏳ 소요 시간: {end_time - start_time:.4f} 초")
-    print(f"🔍 예측된 클래스: **{predicted_label}**")
-    print(f"📈 예측 확률: {predicted_prob:.4f}")
+    print(f"소요 시간: {end_time - start_time:.4f} 초")
+    print(f"예측된 클래스: **{predicted_label}**")
+    print(f"예측 확률: {predicted_prob:.4f}")
 
 except FileNotFoundError:
-    print(f"❌ 오류: 이미지 파일 '{IMAGE_FILE_PATH}'을(를) 찾을 수 없습니다. 경로를 다시 확인해주세요.")
+    print(f"오류: 이미지 파일 '{IMAGE_FILE_PATH}'을(를) 찾을 수 없습니다. 경로를 다시 확인해주세요.")
 except Exception as e:
-    print(f"❌ 추론 과정 중 오류 발생: {e}")
+    print(f"추론 과정 중 오류 발생: {e}")

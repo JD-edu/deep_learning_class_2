@@ -68,6 +68,7 @@ image_mean, image_std = processor.image_mean, processor.image_std
 size = processor.size["height"]
 
 normalize = Normalize(mean=image_mean, std=image_std)
+# 트레인 데이터의 가상화와 검증 데이터의 가상화가 약간 다름 
 _train_transforms = Compose(
         [
             RandomResizedCrop(size),
@@ -98,7 +99,9 @@ from torch.utils.data import DataLoader
 import torch
 
 def collate_fn(examples):
+    # 전체 입력 이미지를 적층하는 역할 
     pixel_values = torch.stack([example["pixel_values"] for example in examples])
+    # 라벨을 텐서화 (label binizer와 비슷)
     labels = torch.tensor([example["label"] for example in examples])
     return {"pixel_values": pixel_values, "labels": labels}
 
@@ -162,7 +165,7 @@ Finally, let's evaluate the model on the test set:
 
 outputs = trainer.predict(test_ds)
 
-print(outputs.metrics)
+print("트레인한 결과 : ", outputs.metrics)
 
 """We can also easily create a confusion matrix:"""
 
