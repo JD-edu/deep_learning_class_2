@@ -1,4 +1,4 @@
-from ultralytics import YOLO
+from ultralytics import YOLOv10
 import cv2
 import os
 
@@ -7,7 +7,7 @@ import os
 model_name = './weights/yolov10n.pt'
 try:
     # 💡 모델 로드
-    model = YOLO(model_name)
+    model = YOLOv10(model_name)
     print(f"✅ 모델 로드 완료: {model_name}")
 except FileNotFoundError:
     print(f"❌ 오류: 모델 파일 '{model_name}'을 찾을 수 없습니다. 경로를 확인하거나 수동으로 다운로드하세요.")

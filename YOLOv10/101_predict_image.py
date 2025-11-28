@@ -10,20 +10,20 @@ try:
     model = YOLO(model_name)
     print(f"모델 로드 완료: {model_name}")
 except FileNotFoundError:
-    print(f"❌ 오류: 모델 파일 '{model_name}'을 찾을 수 없습니다. 경로를 확인하거나 수동으로 다운로드하세요.")
+    print(f" 오류: 모델 파일 '{model_name}'을 찾을 수 없습니다. 경로를 확인하거나 수동으로 다운로드하세요.")
     exit()
 
 # 사용할 이미지 파일 경로
 image_path = './images/class.jpg'
 if not os.path.exists(image_path):
-    print(f"❌ 오류: 이미지 파일 '{image_path}'을 찾을 수 없습니다. 경로를 확인하세요.")
+    print(f" 오류: 이미지 파일 '{image_path}'을 찾을 수 없습니다. 경로를 확인하세요.")
     exit()
 
 # --- 2. 이미지 불러오기 및 추론 실행 ---
 print(f"이미지 경로: {image_path}")
 img = cv2.imread(image_path)
 if img is None:
-    print("❌ 오류: OpenCV로 이미지를 로드할 수 없습니다.")
+    print(" 오류: OpenCV로 이미지를 로드할 수 없습니다.")
     exit()
 
 print("추론 시작...")
