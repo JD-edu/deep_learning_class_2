@@ -1,3 +1,0 @@
-You can down load ViT model in following link. Because of size, this model can not be uploaded.
-
-https://drive.google.com/file/d/1DXLyUp-81Rrs_3dC2Xjz6Ahh7SdXXnQn/view?usp=sharing
